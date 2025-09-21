@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+  <!-- Заголовок -->
+  <h1 id="page-title">Student Portal</h1>
+  <p style="text-align:center; color: gray;">Manage grades and provide feedback</p>
+
+  <!-- Таблица -->
+  <div class="section-block">
+    <h2 class="section-title">Student Grades</h2>
+    <table class="grades-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Grade</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mbappe</td>
+          <td>Web Technologies</td>
+          <td>A</td>
+          <td rowspan="2">Excellent</td>
+        </tr>
+        <tr>
+          <td>Vinisius</td>
+          <td>Design and Algorithms</td>
+          <td>A-</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>Jude</td>
+          <td>English</td>
+          <td>B+</td>
+          <td>Good</td>
+        </tr>
+        <tr>
+          <td>Arda</td>
+          <td colspan="2">History</td>
+          <td>Needs Improvement</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Форма -->
+  <div class="section-block">
+    <h2 class="section-title">Feedback Form</h2>
+    <form class="feedback-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="role">Role:</label>
+      <select id="role" name="role">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label>Would you recommend this portal?</label>
+      <div>
+        <input type="radio" id="yes" name="recommend" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="recommend" value="no">
+        <label for="no">No</label>
+      </div>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
